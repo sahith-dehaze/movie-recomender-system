@@ -93,7 +93,7 @@ def get_movie_suggestions(title, movies_df, knn_model, tfidf_vectorizer, lsa):
 # Streamlit App
 st.title("Movie Recommendation System")
 
-@st.cache_data
+# @st.cache_data
 def get_data_and_model():
     movies_df = load_and_process_data()
     knn_model, tfidf_vectorizer, lsa = train_knn_model(movies_df)
